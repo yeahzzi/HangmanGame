@@ -1,0 +1,23 @@
+body { margin:0; padding:0; }
+#mainContainer { width: calc(100% - 200px); height: calc(100vh - 100px); padding: 50px 100px; background-color: rgb(94, 167, 231); color: #fff; }
+#header { width: 100%; height: 20vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+#header .main-title { width: 100%; height: 10vh; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 50px; font-weight: bold; }
+#header .sub-title { width: 100%; height: 10vh; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 30px; }
+
+#body { width: 100%; height: calc(80vh - 130px); margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center;}
+#body .body-expl { width: 100%; height: 50px; font-size: 30px; display: flex; justify-content: center; align-items: center;}
+#body .alphabets { width: 100%; height: 30vh; font-size: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: center;}
+#body .alphabets .first-line { width: 100%; height: 15vh; display: flex; justify-content: center; align-items: center; }
+#body .alphabets .second-line { width: 100%; height: 15vh; display: flex; justify-content: center; align-items: center; }
+#body .alphabets .alphabet { width: 70px; height: 70px; margin: 0 10px; display: flex; justify-content: center; align-items: center; border-radius: 10px; background-color: #fff; color: rgb(94, 167, 231);}
+#body .alphabets .alphabet:hover { cursor: pointer;}
+#body .alphabets .alphabet.clicked { opacity: 0.4;}
+#blanks-to-fill { width: 30%; height: 10vh; margin: 0 35%; display: flex; justify-content: space-between; align-items: center;}
+#blanks-to-fill span { width: 30px; height: 10vh; font-size: 30px; color: #fff; }
+#body .play-as-input { display: flex; justify-content: space-evenly; width: 30%; height: calc(30vh -180px);}
+#body .play-as-input input { width: 100px; height: 30px; font-size: 20px; }
+#body button { width: 70px; height: 30px;}
+#indicator { width: 100%; height: 10vh; display: flex; justify-content: center; align-items: center; font-size: 30px;}
+#indicator.winner { color: rgb(255, 255, 119)}
+#indicator.loser { color: rgb(241, 82, 82)}
+#indicator.loser .refresh-icon { display: inline-block; margin-left: 50px; }

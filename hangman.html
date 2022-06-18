@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hangman.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Hangman</title>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <div id="header">
+            <div class="main-title">HANGMAN</div>
+            <div class="sub-title">VANILLA JS HANGMAN GAME</div>
+        </div>
+        <div id="body">
+            <div class="body-expl">Use the alphabet below or enter one letter at a time to guess the word.</div>
+            <div class="alphabets">
+                <span class="first-line">
+                    <span class="a alphabet">a</span>
+                    <span class="b alphabet">b</span>
+                    <span class="c alphabet">c</span>
+                    <span class="d alphabet">d</span>
+                    <span class="e alphabet">e</span>
+                    <span class="f alphabet">f</span>
+                    <span class="g alphabet">g</span>
+                    <span class="h alphabet">h</span>
+                    <span class="i alphabet">i</span>
+                    <span class="j alphabet">j</span>
+                    <span class="k alphabet">k</span>
+                    <span class="l alphabet">l</span>
+                    <span class="m alphabet">m</span>
+                </span>
+                <span class="second-line">
+                    <span class="n alphabet">n</span>
+                    <span class="o alphabet">o</span>
+                    <span class="p alphabet">p</span>
+                    <span class="q alphabet">q</span>
+                    <span class="r alphabet">r</span>
+                    <span class="s alphabet">s</span>
+                    <span class="t alphabet">t</span>
+                    <span class="u alphabet">u</span>
+                    <span class="v alphabet">v</span>
+                    <span class="w alphabet">w</span>
+                    <span class="x alphabet">x</span>
+                    <span class="y alphabet">y</span>
+                    <span class="z alphabet">z</span>
+                </span>
+            </div>
+            <div id="blanks-to-fill"></div>
+            <div class="play-as-input">
+                <input id="alphabet-input" type="text" maxlength="1" placeholder="Enter here">
+                <button type="button">Try!</button>
+            </div>
+            <div id="indicator">You have&nbsp<span id="lifeLeft"></span>&nbsplives</div>
+        </div>
+    </div>
+    <script src="hangman.js"></script>
+</body>
+
+</html>
